@@ -1,9 +1,10 @@
 from pymongo import MongoClient, errors
 from bson.objectid import ObjectId
 from pymongo.server_api import ServerApi
+from cred import *
 
 # Підключення до MongoDB
-uri = "mongodb+srv://shulc0690:IWJ1ftVT5RThS35D@cluster0.ytrpt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = f"mongodb+srv://{username}:{password}@cluster0.ytrpt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 client = MongoClient(uri, server_api=ServerApi("1"))
 db = client["cat_database"]
