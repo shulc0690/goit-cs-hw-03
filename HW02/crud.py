@@ -106,9 +106,11 @@ def delete_all_cats():
 # Приклади викликів функцій
 if __name__ == "__main__":
     add_cat("barsik", 3, ["ходить в капці", "дає себе гладити", "рудий"])
+    add_cat("barsik2", 3, ["ходить в лоток", "дає себе гладити", "чорний"])
     get_all_cats()
     get_cat_by_name("barsik")
     update_cat_age("barsik", 4)
     add_feature_to_cat("barsik", "любить рибу")
     delete_cat_by_name("barsik")
+    get_all_cats()
     delete_all_cats()
